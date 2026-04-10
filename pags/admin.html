@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Dias da semana disponíveis</h2>
+    <label><input type="checkbox" class="dia" data-dia="1"> Segunda</label>
+    <label><input type="checkbox" class="dia" data-dia="2"> Terça</label>
+    <label><input type="checkbox" class="dia" data-dia="3"> Quarta</label>
+    <label><input type="checkbox" class="dia" data-dia="4"> Quinta</label>
+    <label><input type="checkbox" class="dia" data-dia="5"> Sexta</label>
+    <label><input type="checkbox" class="dia" data-dia="6"> Sábado</label>
+    <label><input type="checkbox" class="dia" data-dia="0"> Domingo</label>
+    <button onclick="ajustarDatas()">Ajustar data</button>
+
+    <h2>Bloquear data específica</h2>
+    <input type="date" id="dataBloqueio">
+    <button onclick="bloquearData()">Bloquear</button>
+
+    <h2>Horários disponíveis</h2>
+    <input type="text" id="horarioInicio">
+    <input type="text" id="horarioFim">
+    <button onclick="salvarHorarios()">Salvar horários</button>
+
+    <br><br><br><hr><br><br>
+
+    <h3>Agendamentos</h3>
+    <div id="agendamentos-div">
+    </div>
+
+    <br><br>
+
+    <h3>Datas Bloqueadas</h3>
+    <div id="datas-bloqueadas-div">
+    </div>
+
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
