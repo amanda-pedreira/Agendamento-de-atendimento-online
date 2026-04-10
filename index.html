@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <title>Agendamento</title>
+</head>
+<body>
+    <h1>Agendar horário</h1>
+
+    <input type="text" id="data" onchange="carregarHorarios()">
+
+    <select id="horario">
+    </select>
+
+    <input type="number" id="matricula" placeholder="Sua matricula">
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="email" id="email" placeholder="Seu email">
+
+    <h5>Tema do agendamento</h5>
+    <select id="tema">
+        <option id="tema" value="Simulação de aposentadoria">Simulação de aposentadoria</option>
+        <option id="tema" value="Elegibilidade">Elegibilidade</option>
+        <option id="tema" value="Imposto de Renda">Imposto de renda</option>
+    </select>
+
+    <h5>Assunto</h5>
+    <input type="text" id="assunto" placeholder="Adicione o assunto da conversa">
+
+    <button onclick="agendar()">Agendar</button>
+
+    <br><br><br><br><br>
+
+    <a href="pags/login.html">Área administrativa</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
